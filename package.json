@@ -1,0 +1,36 @@
+{
+  "name": "github-bookmarks-manager",
+  "version": "1.0.0",
+  "description": "A github bookmarks manager using react",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiswarya-varma/github-bookmarks-manager.git"
+  },
+  "author": "Aiswarya Varma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aiswarya-varma/github-bookmarks-manager/issues"
+  },
+  "homepage": "https://github.com/aiswarya-varma/github-bookmarks-manager#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

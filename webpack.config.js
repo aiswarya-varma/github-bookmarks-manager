@@ -15,7 +15,28 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
-            }
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'url-loader',
+                options: {
+                    limit: 8192,
+                    name: '[name].[ext]',
+                    outputPath: './img/',
+                    esModule: false
+                },
+            },
+            {
+                test: /\.(svg|eot|ttf|woff|woff2)$/i,
+                loader: 'url-loader',
+                options: {
+                    limit: 8192,
+                    name: '[name].[ext]',
+                    outputPath: './font/',
+                    esModule: false,
+                    publicPath: '../'
+                },
+            },
         ]
     },
     resolve: { extensions: ["*", ".js", ".jsx"] },

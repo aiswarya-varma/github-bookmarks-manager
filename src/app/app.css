@@ -1,0 +1,27 @@
+@import '../font/style.css';
+
+.main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: "Poppins-SemiBold";
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding{
+    padding: 150px;
+} 
+
+.header {
+    font-size: 3rem;
+}
+
+.desc {
+    font-size: 1.5rem;
+}
+
+.bg-img {
+    background: url('../img/header-bg.jpg');
+}

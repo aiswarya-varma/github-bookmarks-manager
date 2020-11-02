@@ -1,15 +1,14 @@
 import React from 'react';
+import BookmarkedRepoContainer from '../components/BookmarkedRepoContainer';
+import Header from '../components/Header';
 import './app.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = props => {
+const App = () => {
     return (
         <div className="main">
-            <div className="bg-img padding">
-                <div className="header text-center">Github Repositories Manager</div>
-                <div className="desc text-center">Bookmark all the github repositories you need</div>
-            </div>
-            <h1> Your Repositories </h1>
-
+            <Header />
+            <BookmarkedRepoContainer />
         </div>
     );
 }

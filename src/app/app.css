@@ -4,12 +4,22 @@
     font-family: "Poppins-SemiBold";
 }
 
-.text-center {
-    text-align: center;
+.font-medium {
+    font-size: 20px;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+/* Banner styles */
+.bg-img {
+    background: url('../img/bg2-1.jpg');
+    background-repeat: no-repeat;
 }
 
 .padding{
-    padding: 150px;
+    padding: 50px;
 } 
 
 .header {
@@ -20,18 +30,26 @@
     font-size: 1.5rem;
 }
 
-.font-medium {
-    font-size: 20px;
-}
-
-.bg-img {
-    background: url('../img/bg2-1.jpg');
-    background-repeat: no-repeat;
-}
-
-.header-text-pop {
+.white-text {
     color: white;
 }
+
+/* Icon Styles */
+
+.icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.icon p {
+    text-shadow: 2px 2px 2px #776969;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+/* Content container styles */
 
 .rounded-border {
     border: 2px solid #4a3652;
@@ -44,14 +62,33 @@
     margin-top: 2rem;
 }
 
-.repo-heading {
+.repo-view-heading {
     color: #4f7989;
 }
 
-.repo-body {
+.repo-view-body {
     padding: 3rem;
 }
 
-h1 {
-    margin-top: 0px;
+/* Default View Styles */
+
+.default-view {
+    padding-top: 30px;
+}
+
+/* Modal Styles */
+
+.modal-body .row {
+    padding-bottom: 20px;
+}
+
+/* Repo List Content Styles*/
+
+.repo-list-heading {
+    font-size: 1.5rem;
+}
+
+.repo-list-owner {
+    font-size: 1rem;
+    color: #4f7989;
 }

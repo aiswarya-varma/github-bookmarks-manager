@@ -10,8 +10,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        addRepoToView: () => dispatch(addRepo()),
-        removeRepoFromView: () => dispatch(removeRepo())
+        addRepoToView: (data) => dispatch(addRepo(data)),
+        removeRepoFromView: (data) => dispatch(removeRepo(data))
     };
 }
 

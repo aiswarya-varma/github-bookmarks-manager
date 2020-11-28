@@ -1,11 +1,8 @@
-const reducer = (state, action) => {
+const reducer = (state = [], action) => {
     switch (action.type) {
-        case "ADDREPO": return [...state, action.payload]
-        case "REMOVEREPO": {
-            // return new state after removing the repo with the same name as in action.payload
-            return state;
-        }
-        default: return state
+        case "ADDREPO": return state.filter((s) => s.id === action.payload.id).length ? state : [...state, action.payload];
+        case "REMOVEREPO": return state.filter((s) => s.id !== action.payload);
+        default: return state;
     }
 }
 
